@@ -1,0 +1,90 @@
+[
+    {
+        "index": 1,
+        "timestamp": "2022-03-07 20:45:37.028911",
+        "proof": 0,
+        "data": "Genesis Block",
+        "currentHash": "938db8c9f82c8cb58d3f3ef4fd250036a48d26a712753d2fde5abd03a85cabf4",
+        "previousHash": "0"
+    },
+    {
+        "index": 2,
+        "timestamp": "2022-04-10 22:02:41.200625",
+        "proof": 644,
+        "data": {
+            "make": "CITROEN",
+            "model": "SUV",
+            "year": "2020",
+            "userID": "dpaterno",
+            "password": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+            "carID": "car2",
+            "emissionSinceLast": "-1"
+        },
+        "currentHash": "13b75dc68a62d9a4d6e097420dd8bd324264b0cb3cd588bf265956973f0be6b5",
+        "previousHash": "938db8c9f82c8cb58d3f3ef4fd250036a48d26a712753d2fde5abd03a85cabf4"
+    },
+    {
+        "index": 3,
+        "timestamp": "2022-04-10 22:03:16.582493",
+        "proof": 5447,
+        "data": {
+            "make": "CITROEN",
+            "model": "SUV",
+            "year": "2020",
+            "userID": "dpaterno",
+            "password": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+            "carID": "car2",
+            "emissionSinceLast": "2440"
+        },
+        "currentHash": "7420239a4e86c590b3e32fd77da106281c5e09960ce0dce0daf1045a73cfcdea",
+        "previousHash": "13b75dc68a62d9a4d6e097420dd8bd324264b0cb3cd588bf265956973f0be6b5"
+    },
+    {
+        "index": 4,
+        "timestamp": "2022-04-10 22:04:54.755370",
+        "proof": 4221,
+        "data": {
+            "make": "CITROEN",
+            "model": "SUV",
+            "year": "2020",
+            "userID": "dpaterno",
+            "password": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+            "carID": "car2",
+            "emissionSinceLast": "2440"
+        },
+        "currentHash": "7823861ab2e838b22394c711b33629e218ebd400f67f85ac9a5ae1a73128cd27",
+        "previousHash": "7420239a4e86c590b3e32fd77da106281c5e09960ce0dce0daf1045a73cfcdea"
+    },
+    {
+        "index": 5,
+        "timestamp": "2022-04-10 22:06:13.439113",
+        "proof": 4412,
+        "data": {
+            "make": "Honda",
+            "model": "Civic",
+            "year": "2012",
+            "userID": "user",
+            "password": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+            "carID": "car2",
+            "emissionSinceLast": "-1"
+        },
+        "currentHash": "bef7a1f13b27fff06f0ae834989258142931d012953cc2ba772e23e8cb8a3245",
+        "previousHash": "7823861ab2e838b22394c711b33629e218ebd400f67f85ac9a5ae1a73128cd27"
+    },
+    {
+        "index": 6,
+        "timestamp": "2022-04-10 22:06:40.395237",
+        "proof": 3761,
+        "data": {
+            "make": "Honda",
+            "model": "Civic",
+            "year": "2012",
+            "userID": "user",
+            "password": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+            "carID": "car2",
+            "emissionSinceLast": "10000"
+        },
+        "currentHash": "54af4fd26e683ef8c84d006569f0a107121529e2afc05e9952f028bbfdb120fb",
+        "previousHash": "bef7a1f13b27fff06f0ae834989258142931d012953cc2ba772e23e8cb8a3245"
+    }
+]
