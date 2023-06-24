@@ -12,7 +12,7 @@ Other modules imported are already installed in the native package. No need to e
 Elevated Peer has a "doc.json" file. It contains the genesis block. If this information gets corrupted you will not be able
 to move forward with the code. Please ensure that you make no modifications to any files before the intial run.
 
-### Setup
+### **Setup**
 Unzip the file into any folder on your local machine. 
 The code has to be set up in 3 different directories which represent 3 different nodes on the network.
 The elevated peer has the ability to manipulate the blockchain, peer1 and peer2 do not.
@@ -21,7 +21,7 @@ If for any reason, elevatedPeer is unable to connected to blockchain.py please e
 in the same directory and restart the program again. The pycache folder helps make the connection between the two modules
 and will not be present before you run "elevatedPeer.py" for the first time.
 
-### Passwords
+### **Passwords**
 Enter the password enclosed in ' ' when prompted by the file in front of it.
 elevatedPeer.py - 'admin'
 peer1.py - 'peer1'
@@ -30,7 +30,7 @@ These codes are not visible in the code. You will not be able to find them elsew
 I did not add the functionality to change the password, to make sure if you have.
 
 
-### Typical execution format of each Script
+### **Typical execution format of each Script**
 1. Ask for password. - Authentication
 2. Ask if User needs to Send, Recieve or Exit. Calls functions accordingly
 3. Peers can only recieve the blockchain, Elevated Peers can receive only the data.
@@ -43,45 +43,27 @@ I did not add the functionality to change the password, to make sure if you have
 
 
 ## Running the Program
-To run this code on your laptop open the Command Prompt in the elevatedPeer and peer1 directories.
-"--elevatedPeer" signifies that this command is run on the elevatedPeer Command Prompt.
-"--peer1" signifies that this command is run on the peer1 Command Prompt.
-exact codes are enclosed within " " and and extra instruction within ().
-Any instruction is to help you type the correct command and not to written onto the console.
 
-"python elevatedPeer.py" --elevatedPeer
-"admin" (On the prompt enter the password) --elevatedPeer
-(The password will not be visible to you as you type it.) --elevatedPeer
-"2" (To recieve the data) --elevatedPeer
-(Press Enter if asked to continue recieving and open the next port for the new client) --elevatedPeer
-(The script will now broadcast an IP Address and Port Number that a peer can connect to) --elevatedPeer
-(If a client connects, program will ask if you would like to proceed with opening new ports) -- elevatedPeer
-(IF YOU FORGET TO PRESS ENTER THE PROGRAM WILL NOT PROCEED FURTHER) --elevatedPeer
+[Tutorial/Demo](https://www.youtube.com/watch?v=P7s4JZPbnhE)
 
-"python peer1.py" --peer1
-"peer1" (On the prompt enter the password) --peer1
-"1" (To send the data) --peer1
-"127.0.2.2" (Enter the IP Address - This should be visible on the command prompt of elevatedPeer) --peer1
-"5000" (Enter the port number as displayed on the elevatedPeer command prompt) --peer1
+### **Elevated Peer**
 
-Connection has been made at this point.
+To start the elevated peer from the command line, change into the elevated peer directory, and run the following command. Please note you can enter any valid IP/Port combination.
 
-(Enter the full address of the file you have to transfer) --peer1
-(for me the address was C:\Users\apnat\Desktop\CN\sampleData.txt) 
-(You should be able to transfer any file, make sure the file has text data before uploading)
+`python3 elevatedPeer.py localhost 50000`
 
-(File has been recieved and added to the blockchain) --elevatedPeer
+You will then be prompted for the admin password, which is recorded above in the 'Passwords' section of the doc. After entering a valid password, you will then be able to see valid connections between the elevatedPeer and its peers.
 
-"3" (to exit) --elevatedPeer
-"3" (to exit) --peer1
+**NOTE:** Each instance of the elevatedPeer represents one network. A future goal of this project is to expand the ability to have multiple elevatedPeers dictating over the same blockchain (and same network).
 
-You can now go and open doc.json in the elevatedPeer directory to see that the data has been succesfully added to the blockchain file.
-Originally I planned on using a json format for data but due to various limitations as detailed in the report this could be implemented.
-You can explore multiple functionalities of the code using different text files to transfer data in between.
-The implementation should be able to transfer all types of files but garbage data might be written for files which have no text.
+### **Peer**
 
-Similar functionality can also be demonstrated between peer1 and peer2
-Follow the instructions on the command prompt and you should be able to follow through without any complications
+To run a peer, change into either one of the peer directories on the command line, and run the following command. Please note that in order to connect to the elevated peer you set up from the previous step, whatever IP/Port combo you use must be the same for this command.
+
+`python3 peer.py localhost 50000`
+
+You will then be prompted to enter a username, and then be asked to either create an acccount, or enter existing credentials. Please note that passwords persist between sessions, and the only way to reset all entered data is to set the `doc.json` files to how they are in this commit. In the future, there should be more robust error handling.
+
 
 ----------------------------------------------------------------------------------------------------------------------
 
